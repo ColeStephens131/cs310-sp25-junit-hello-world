@@ -8,8 +8,9 @@ public class Main {
         String message = m.getGreeting();
         String teaPot = m.getTeaPot();
         String diddle = m.getDiddle();
-        //Added a new method call
         String hickory = m.getHickory();
+        //Added a new method call
+        String person = m.getPerson();
         
         System.out.println(message);
         System.out.println(m.reverse(message));
@@ -20,6 +21,8 @@ public class Main {
         //Added a new Print Statement
         System.out.println(hickory);
         System.out.println(m.reverse(hickory));
+        //Added a new Print Statement
+        System.out.println(person);
         
     }
     
@@ -32,12 +35,16 @@ public class Main {
     }
     
     public String getDiddle() {
-        return "Hey Diddle Diddle";
+        return "ey Diddle Diddle";
     }
     
     //Added a new String method
     public String getHickory() {
         return "Hickory Dickory Dock";
+    }
+    
+    public String getPerson() {
+        return "A person's a person.";
     }
     
     //Reverse Method
