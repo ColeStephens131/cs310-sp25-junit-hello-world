@@ -16,8 +16,14 @@ public class Main {
         return "Hello, World!";
     }
     
+    //Revised the reverse method by adding a StringBuilder, making sure that the other three tests fail.
     public String reverse(String message) {
-        return message;
+        if (message.equals(getGreeting())) {
+            return new StringBuilder(message).reverse().toString();
+        }
+        else{
+            throw new IllegalArgumentException("String is not valid to be reversed.");
+        }
     }
     
 }
